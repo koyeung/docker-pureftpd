@@ -1,6 +1,6 @@
-docker-vsftpd
+docker-pureftpd
 ==
-Host pure-ftpd for virtual users only.
+Host [Pure-FTPd](https://www.pureftpd.org/project/pure-ftpd) for virtual users only.
 
 * reference:
   - [bamarni/docker-pureftp](https://github.com/bamarni/docker-pureftp)
@@ -19,7 +19,7 @@ Copy the sources to your docker host and build the container:
 
 Method 2: Pull from Docker Hub
 --
-You may get from Docker Hub,
+Get it from Docker Hub,
 
     # docker pull docker.io/koyeung/pure-ftpd
 
