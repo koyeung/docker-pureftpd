@@ -32,6 +32,7 @@ RUN dpkg -i /tmp/pure-ftpd/pure-ftpd-common*.deb  && \
 # Setup account
 RUN /usr/sbin/useradd -m ${FTP_USER} -s /bin/bash
 RUN touch /etc/pure-ftpd/pureftpd.passwd  && \
+    chmod 600 /etc/pure-ftpd/pureftpd.passwd  && \
     pure-pw mkdb
 
 VOLUME ["/home/${FTP_USER}"]
